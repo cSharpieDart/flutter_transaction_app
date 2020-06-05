@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 //add this for the required for variables
 
 class Transaction {
-  final int id;
+  final String id;
   final String title;
   final double amount;
   final DateTime date;
