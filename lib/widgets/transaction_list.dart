@@ -11,7 +11,7 @@ class TransactionList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: double.infinity,
+      height: 600,
       child: ListView.builder(
         itemBuilder: (context, index) {
           return Card(

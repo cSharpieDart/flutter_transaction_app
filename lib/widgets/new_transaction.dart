@@ -1,9 +1,7 @@
-
 import 'package:flutter/material.dart';
 
 class NewTransaction extends StatefulWidget {
   final Function addTx;
-
 
   NewTransaction(this.addTx);
 
@@ -20,7 +18,7 @@ class _NewTransactionState extends State<NewTransaction> {
     final enteredTitle = titleController.text;
     final enteredAmount = double.parse(amountController.text);
 
-    if (enteredTitle.isEmpty || enteredAmount <= 0 ){
+    if (enteredTitle.isEmpty || enteredAmount <= 0) {
       return;
     }
 
@@ -30,7 +28,6 @@ class _NewTransactionState extends State<NewTransaction> {
     );
 
     Navigator.of(context).pop();
-  
   }
 
   @override
